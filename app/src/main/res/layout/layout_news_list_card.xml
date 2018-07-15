@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/padding_small"
+    android:layout_marginStart="@dimen/padding_small"
+    android:layout_marginTop="@dimen/padding_small"
+    app:cardBackgroundColor="@color/gray50"
+    app:cardCornerRadius="@dimen/card_radius_small"
+    app:cardElevation="@dimen/card_elevation_small"
+    app:cardPreventCornerOverlap="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/padding_small"
+        tools:ignore="RtlSymmetry">
+
+        <ImageView
+            android:id="@+id/imageViewPhoto"
+            android:layout_width="@dimen/list_img_size"
+            android:layout_height="@dimen/list_img_size"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription"
+            tools:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_small"
+            android:layout_marginTop="@dimen/padding_small"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:maxLines="2"
+            android:textColor="@color/gray900"
+            android:textSize="@dimen/font_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageViewPhoto"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Caves and Caverns; Rescues; Pattaya (Thailand); Thailand; Tham Luang Nang Non Cave (Thailand)" />
+
+        <TextView
+            android:id="@+id/textViewByLine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_small"
+            android:layout_marginTop="@dimen/padding_small"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:maxLines="2"
+            android:textColor="@color/gray400"
+            android:textSize="@dimen/font_small_x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageViewPhoto"
+            app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+            tools:text="By GUILBERT GATES, TROY GRIGGS, DENISE LU, TIM WALLACE and JEREMY WHITE" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/padding_tiny"
+            android:drawableStart="@drawable/ic_date_gray400_20dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/padding_small"
+            android:textColor="@color/gray400"
+            android:textSize="@dimen/font_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="2018-07-06" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
