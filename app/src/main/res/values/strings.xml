@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NYTimes Sample</string>
+
+    <string name="api_error_no_network">No internet connection. Try again</string>
+    <string name="api_error_default">Something went wrong</string>
+    <string name="retry">Retry</string>
+</resources>
