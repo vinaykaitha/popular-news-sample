@@ -10,6 +10,7 @@ Sample application showing a list of most popular news and information of the pa
 -  **[NYTimes API](https://developer.nytimes.com/)**- Fetch most popular news from the last 7 days
 -  **[Retrofit](https://github.com/square/retrofit)**- API calls
 -  **[Glide](https://github.com/bumptech/glide)**- Image loading
+-  **[Butterknife](https://github.com/JakeWharton/butterknife)**- View binding
 
 ## Tests
 
@@ -17,6 +18,10 @@ Run Instrumented unit tests from command line
 ```gradle
 ./gradlew connectedAndroidTest
 ```
+
+## Lint Report
+
+Located at **/app/build/reports/lint-results.html**
 
 ## Setup
 Get the API Key from [NYTimes developer site](https://developer.nytimes.com/signup)
