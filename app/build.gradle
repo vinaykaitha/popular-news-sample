@@ -13,7 +13,7 @@ android {
         versionCode 1
         versionName "1.0"
 
-        buildConfigField('String', "API_KEY", "\"376326766c4f4ae0ac175df83a979d7d\"")
+        buildConfigField('String', "API_KEY", "\"\"")
 
         buildConfigField('String', "BASE_URL", "\"http://api.nytimes.com/\"")
         buildConfigField('String', "POPULAR_NEWS_PATH", "\"svc/mostpopular/v2/mostviewed/all-sections/7.json\"")
